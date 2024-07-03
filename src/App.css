@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.extra-space {
+  height: 1rem; /* Adjust this value to increase or decrease the space */
+}
+
 .textbox-container {
   display: flex;
   justify-content: center;
@@ -75,7 +79,7 @@
 }
 
 .quality-card, .personality-card {
-  width: 300px;
+  width: 250px;
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 10px;

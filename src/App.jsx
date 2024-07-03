@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import Progress from './components/Progress';
+import Footer from './components/Footer';
 
 import './App.css'
 
@@ -316,7 +317,6 @@ function App() {
     <>
       <h1>Name Analysis AI</h1>
       <h2>Discover character and personality traits associated with names</h2>
-
       <div className='container'>
         <div className='textbox-container'>
           <input 
@@ -329,7 +329,7 @@ function App() {
       </div>
 
       <button disabled={disabled} onClick={analyzeNames}>Analyze Name</button>
-
+      
       {showResults && (
         <>
           <h3>Top Character Associations</h3>
@@ -364,8 +364,8 @@ function App() {
           
           <h3>How it Works</h3>
 
-         <p>This site probes the internals thoughts of language models (like ChatGPT) to gauge what they think when they see a name. By comparing how close it thinks a name is to certain concepts, we can see how similar these models think the two are. Since these are trained on a large corpus of text data, it tends to align with the traits people associate with names.</p>
-         
+         <p>This site probes the internals thoughts of language models (like ChatGPT) to gauge what they think when they see a name. By comparing how close it thinks a name is to certain concepts, we can see how similar these models think the two are. Since these are trained on a large corpus of text data from people, it tends to align with the traits people associate with names.</p>
+         <div className="extra-space"></div>
         </>
       )}
 
@@ -388,6 +388,7 @@ function App() {
           ))}
         </div>
       )}
+    <Footer hasSearched={showResults} />
     </>
   )
 }
