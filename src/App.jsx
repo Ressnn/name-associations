@@ -315,7 +315,7 @@ function App() {
 
   return (
     <>
-      <h1>Name Analysis AI</h1>
+      <h1>Name Associations AI</h1>
       <h2>Discover character and personality traits associated with names</h2>
       <div className='container'>
         <div className='textbox-container'>
