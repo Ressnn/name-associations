@@ -4,5 +4,5 @@ import Sitemap from 'vite-plugin-sitemap'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), Sitemap(),],
+  plugins: [react(), Sitemap({hostname: "https://nameassociations.com/"}),],
 })
